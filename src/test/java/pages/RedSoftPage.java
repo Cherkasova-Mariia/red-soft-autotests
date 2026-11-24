@@ -13,12 +13,9 @@ import static testdata.TestDataRedSoft.*;
 
 public class RedSoftPage {
 
-    // --- ЭЛЕМЕНТЫ СТРАНИЦЫ (ЛОКАТОРЫ) ---
     private SelenideElement body = $("body");
     private SelenideElement aboutLink = $(byText(ABOUT_LINK_TEXT));
     private SelenideElement contactPhone = $(byText(PHONE_NUMBER));
-
-    // --- ДЕЙСТВИЯ (МЕТОДЫ) ---
 
     @Step("Открываем главную страницу")
     public RedSoftPage openMainPage() {
@@ -40,7 +37,6 @@ public class RedSoftPage {
 
     @Step("Проверяем, что ссылка 'О компании' присутствует в коде страницы")
     public RedSoftPage checkAboutLinkExists() {
-        // ИСПРАВЛЕНО: используем exist, так как ссылка может быть скрыта в меню
         aboutLink.shouldBe(Condition.exist);
         return this;
     }

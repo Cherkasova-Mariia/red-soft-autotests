@@ -1,11 +1,8 @@
 package testdata;
 
 public class TestDataRedSoft {
-    // URL-адреса
     public static final String BASE_URL = "https://www.red-soft.ru/ru/";
     public static final String CONTACT_URL = "https://www.red-soft.ru/ru/contact";
-
-    // Ожидаемые тексты для проверок
     public static final String EXPECTED_TITLE = "РЕД СОФТ";
     public static final String PRODUCT_RED_OS = "РЕД ОС";
     public static final String YEARS_OF_DEVELOPMENT = "20";
